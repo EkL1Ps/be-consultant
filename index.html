@@ -6,39 +6,45 @@
     <title>Be consultant</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
-    <header class="header row">
-      <div class="main-header-top-bar-left row">
-        <div class="logo"><img src="images/logo.png" alt="logo" /></div>
-        <div class="header-menu">
-          <nav class="navigation">
-            <ul class="row">
-              <li><span>Start</span></li>
-              <li><span>Services</span></li>
-              <li><span>About</span></li>
-              <li><span>Useful tips</span></li>
-              <li><span>Statistics</span></li>
-              <li><span>Our references</span></li>
-              <li><span>Contact</span></li>
-            </ul>
-          </nav>
+    <header class="header">
+      <div class="header-wrapper row">
+        <div class="main-header-top-bar-left row">
+          <div class="logo"><img src="images/logo.png" alt="logo" /></div>
+          <div class="header-menu">
+            <nav class="navigation">
+              <ul class="row">
+                <li><span>Start</span></li>
+                <li><span>Services</span></li>
+                <li><span>About</span></li>
+                <li><span>Useful tips</span></li>
+                <li><span>Statistics</span></li>
+                <li><span>Our references</span></li>
+                <li><span>Contact</span></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-      </div>
-      <div class="main-header-top-bar-right row">
-        <input
-          type="text"
-          name="input-search"
-          id="input-search"
-          class="input-search"
-        />
-        <div>
-          <button class="search-button">
-            <img src="images/search_icon.svg" alt="search" />
-          </button>
-        </div>
-        <div>
-          <button class="buynow-button">Buy now</button>
+        <div class="main-header-top-bar-right row">
+          <input
+            type="text"
+            name="input-search"
+            id="input-search"
+            class="input-search"
+          />
+          <div>
+            <button class="search-button">
+              <img src="images/search_icon.svg" alt="search" />
+            </button>
+          </div>
+          <div>
+            <button class="buynow-button">Buy now</button>
+          </div>
         </div>
       </div>
     </header>
@@ -401,11 +407,67 @@
 
       <!-- Our references -->
       <div class="our-references-container">
-        <div class="slider"></div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="avatar">
+                <img src="images/bobknight.png" alt="BobKnight" />
+              </div>
+              <h4>
+                Curabitur et malesuada aliquet, arcu nec pede. Cras ornare
+                pulvinar mollis, purus sit amet, neque. , sapien quis libero.
+                Praesent vitae fermentum augue. Cum sociis natoque.
+              </h4>
+              <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+              <h5 class="slider-name">Bob Knight</h5>
+              <div class="slider-company">Font Mager</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="avatar">
+                <img src="images/ronaldverloe.jpg" alt="RonaldVerloe" />
+              </div>
+              <h4>
+                Tortor orci luctus id, odio. Morbi sed neque. Class aptent
+                taciti sociosqu ad litora torquent per conubia nostra, per
+                conubia nostra, per inceptos hymenaeos.
+              </h4>
+              <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+              <h5 class="slider-name">Ronald Verloe</h5>
+              <div class="slider-company">Delired</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="avatar">
+                <img src="images/cloewent.jpg" alt="CloeWent" />
+              </div>
+              <h4>
+                Aliquam tempor lorem. Maecenas nisl neque vitae libero malesuada
+                augue a luctus congue, lacus at urna sem volutpat ut, tempus ut,
+                condimentum enim dolor gravida pulvinar interdum.
+              </h4>
+              <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+              <h5 class="slider-name">Cloe Went</h5>
+              <div class="slider-company">Rowent</div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
       <!-- Our references -->
     </main>
     <footer class="footer"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

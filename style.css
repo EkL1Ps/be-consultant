@@ -92,13 +92,17 @@ body {
   border-color: transparent;
 }
 
-.header {
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+.header-wrapper {
   max-width: 100%;
   height: 61px;
   background-color: rgba(255, 255, 255, 0.979);
   padding: 0 1%;
-  position: fixed;
-  z-index: 1000;
   justify-content: space-between;
 }
 
@@ -425,7 +429,7 @@ body {
     background-color: #ffedeb;
   }
   .statistics-image {
-    width: 100%;
+    width: 745px;
     height: 1181px;
   }
   .statistics-content {
@@ -458,5 +462,51 @@ body {
   .our-references-container {
     height: 672px;
     padding: 140px 0 100px;
+    text-align: center;
+  }
+  .swiper {
+    width: 1059px;
+    height: 100%;
+    cursor: context-menu;
+  }
+  .swiper h4 {
+    margin: 0 100px;
+    font-style: italic;
+  }
+  .avatar {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 34px;
+  }
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+  }
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin: 41px 0 15px;
+  }
+  .dots .dot {
+    width: 5px;
+    height: 5px;
+    background-color: #d00909;
+    border-radius: 100%;
+    margin: 0 5px;
+  }
+  .slider-company {
+    margin: 10px 0 0;
+    color: #a8a8a8;
+    font-size: 15px;
+  }
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    margin: 0 9px !important;
+  }
+  .swiper-pagination .swiper-pagination-bullet-active {
+    background: #d00909;
   }
 }/*# sourceMappingURL=style.css.map */
