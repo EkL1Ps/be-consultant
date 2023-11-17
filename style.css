@@ -39,6 +39,10 @@
   letter-spacing: 4px !important;
 }
 
+.hide {
+  display: none !important;
+}
+
 body {
   font-size: 15px;
   line-height: 30px;
@@ -508,5 +512,66 @@ header {
   }
   .swiper-pagination .swiper-pagination-bullet-active {
     background: #d00909;
+  }
+  .contact-container {
+    background-color: #eeeded;
+    padding: 140px 0;
+  }
+  .contact-wrapper {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .contact-title-block {
+    margin: 0 0 0 5px;
+  }
+  .contact-title-block h6 {
+    color: #d00909;
+    display: flex;
+    margin: 128px 0 37px;
+  }
+  .contact-title-block h6::before {
+    content: "";
+    display: block;
+    border: 1px solid black;
+    width: 27px;
+    height: 8px;
+    border-radius: 10px;
+    margin: 8px 20px 0 0;
+  }
+  .contact-title-block img {
+    width: 99%;
+  }
+  .contact-info {
+    padding: 140px 0;
+  }
+  .contact-info h2 {
+    text-align: center;
+  }
+  .contact-info .col-50 {
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+  }
+  .contact-write-a-message {
+    padding: 140px 0;
+  }
+  .contact-write-a-message h2 {
+    text-align: center;
+  }
+  .questions {
+    transition: 0.3s;
+  }
+  .questions .plus {
+    color: rgba(0, 0, 0, 0.08);
+    font-size: 15px;
+    margin: 20px;
+  }
+  .questions .question {
+    font-weight: 700;
+    font-size: 13px;
+    margin: 20px 20px 20px 3px;
+    cursor: pointer;
+  }
+  .questions .answer {
+    display: block;
+    margin: 0 0 0 53px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,8 +1,8 @@
-new Swiper(".swiper", {
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+"use strict";
 
-  loop: true,
+const question = document.querySelector(".question");
+const answer = document.querySelector(".answer");
+
+question.addEventListener("click", function () {
+  answer.classList.add("hide");
 });
